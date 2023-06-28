@@ -1,7 +1,12 @@
-#include<stdio.h>
+#include <stdio.h>
+void incrementa(int * ponteiro){
+    /*
+    int * ponteiro: ponteiro para variavél do tipo int
+    realiza o incremento do conteudo do ponteiro
+    */
+    (*ponteiro)++;
+}
 int main(void){
-    int x=2;
-    int *p=&x; //ponteiro
-    printf ("o enderoco de x e  %p \n",&x);
-    return(0);
+    int var = 2;
+    int
 }
