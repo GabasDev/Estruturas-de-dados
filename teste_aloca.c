@@ -13,6 +13,6 @@ int main(void){
     else {
         printf ("erro de memoria");
     }
-    return (0);
+    return (0); 
 }
 
