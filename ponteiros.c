@@ -8,5 +8,11 @@ void incrementa(int * ponteiro){
 }
 int main(void){
     int var = 2;
-    int
+    printf("Antes da chamada da função: %d\n", var);
+    
+    incrementa(&var);
+    
+    printf("Depois da chamada da função: %d\n", var);
+
+    return 0;
 }
