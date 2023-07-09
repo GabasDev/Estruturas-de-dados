@@ -68,6 +68,7 @@ int main()
     {
         free(turma[i]);
     }
+    free(turma);
 
     return 0;
 }
