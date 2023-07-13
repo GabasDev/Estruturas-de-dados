@@ -8,7 +8,7 @@ struct aluno{
 };
 
 int main (void){
-    // var_aluno é coisada pelo o .
+    // var_aluno é chamado pelo "."
 
 
     struct aluno var_aluno;
