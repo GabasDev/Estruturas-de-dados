@@ -36,7 +36,8 @@ void imprimir_valores( Funcionario *funcionario){
     printf ("Cargo : %s\n",funcionario->cargo );
 }
 //   funcao para realizar uma alteracao no salario de uma estrutura do tipo Funcionario.
-void alteracao_valores (Funcionario * funcionario, int novo_salario){
+void alteracao_valores (Funcionario * funcionario){
+    int novo_salario;
     printf ("insira o novo salario \n");
     scanf ("%d", &novo_salario);
     funcionario->salario = novo_salario;
@@ -66,10 +67,13 @@ int main(void) {
         registrar_funcionario(&dados_funcionario[i]);
         printf ("\n-------------------------\n");
     }
+       alteracao_valores(&dados_funcionario[0]);
+       
     for (i=0; i < 2; i++){
         imprimir_valores(&dados_funcionario[i]);
         printf ("\n-------------------------\n");
     }
     maior_menor_salario(dados_funcionario,2);
+ 
     return 0;
 }    
