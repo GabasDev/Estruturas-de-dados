@@ -30,7 +30,7 @@ int main(void) {
         scanf("%f", &var_pessoa[indice].saldo);
     }
 
-    // exibir os dados 
+        // exibir os dados 
     for (indice = 0; indice < 2; indice++) {
         printf("Dados informados da pessoa %d:\n ", indice + 1);
         printf("Nome: %s\n", var_pessoa[indice].nome);
