@@ -9,11 +9,16 @@ typedef struct pessoa {
 } Pessoa;
 
 int main(void) {
-    Pessoa var_pessoa[2];
     
+    int quant_pessoas;
     int indice;
 
-    for (indice = 0; indice < 2; indice++) {
+    printf("informe a quantidade de pessoas: ");
+    scanf("%d", &quant_pessoas);
+
+    Pessoa var_pessoa[quant_pessoas];
+
+    for (indice = 0; indice < quant_pessoas; indice++) {
         printf("Digite o nome: ");
         scanf(" %[^\n]", var_pessoa[indice].nome);
 
@@ -26,12 +31,14 @@ int main(void) {
         printf("Digite o numero da conta: ");
         scanf("%d", &var_pessoa[indice].numeroconta);
 
-        printf("Digite o saldo: ");
+        printf("Digite o saldo: \n");
         scanf("%f", &var_pessoa[indice].saldo);
+
+        printf ("----------------------------\n");
     }
 
         // exibir os dados 
-    for (indice = 0; indice < 2; indice++) {
+    for (indice = 0; indice < quant_pessoas; indice++) {
         printf("Dados informados da pessoa %d:\n ", indice + 1);
         printf("Nome: %s\n", var_pessoa[indice].nome);
         printf("Senha: %s\n", var_pessoa[indice].senha);
@@ -40,6 +47,5 @@ int main(void) {
         printf("Saldo: %.2f\n", var_pessoa[indice].saldo);
         printf("\n");
     }
-
     return 0;
 }
