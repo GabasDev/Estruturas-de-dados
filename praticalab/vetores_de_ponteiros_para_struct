@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+    struct aluno
+{
+    int mat;
+    char nome[81];
+    float notas[3];
+    float media;
+};
+typedef struct aluno Aluno;
+    struct turma{
+    char id;   /* caractere que identifica a turma, por exemplo, A ou B */
+    int vagas; /* números de vagas disponíveis para fechar a turma */
+    Aluno *alunos[MAX_VAGAS];
+};
+typedef struct turma Turma;
+
+  turma, cria_turma(char id){
+    
+    printf (" Digite o nome da turma: ");
+    scanf ("%c", &id);
+
+    return NULL;   
+}    
+    switch (escolha){
+    case /* constant-expression */:
+        /* code */
+        break;
+    
+    default:
+        break;
+    }
+    
+
+int main (void){
+    Turma *turmas[MAX_TURMAS];
+return 0;
+}
