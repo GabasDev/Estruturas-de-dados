@@ -29,7 +29,7 @@ void imprimir_valores( Pessoa *pessoa){
 //   funcao para realizar uma alteracao no salario de uma estrutura do tipo Funcionario.
 void alteracao_valores (Pessoa *pessoa){
     int nova_idade;
-    printf ("insira o novo salario \n");
+    printf ("insira da nova idade \n");
     scanf ("%d", &nova_idade);
     pessoa->idade = nova_idade;
 }
