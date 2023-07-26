@@ -25,14 +25,14 @@ int main (void){
     printf ("Identifique seu genero 0 para masculino e 1 para feminino ");
     scanf ("%d", &pessoa.gen);
     
-    printf (" nome da vitima: %s\n ", pessoa.nome);
+    printf (" nome da pessoa : %s\n ", pessoa.nome);
 
-    printf (" idade da vitima: %d\n ", pessoa.idade);
+    printf (" idade da pessoa : %d\n ", pessoa.idade);
 
     if (pessoa.gen==1){
-        printf ("o genero da vitima feminino ");
+        printf ("o genero da pessoa feminino ");
     }else{
-        printf ("o genero da vitima MASCULINO ");
+        printf ("o genero da pessoa MASCULINO ");
     }
 return 0;
 }
