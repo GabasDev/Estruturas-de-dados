@@ -45,16 +45,29 @@ Turma* cria_turma(char id){
             return turmas[i]; 
         }
     }
+    return(NULL);
 }
 void matricula_aluno(Turma* turma, int mat, char* nome){
-    if (turma->alunos!=NULL){
-        printf("nao vagas");
-    }else{
-        printf ("Tem vagas");
-        turma->alunos[10]->notas[0]=0;
-        turma->alunos[10]->mat=mat;
-        turma->alunos[10]->nome[81]=nome;
-    } 
+    int i,j;
+    char id;
+    printf ("em qual turma voce deseja matricular \n");
+    scanf ("%c", &id );
+    for (j=0; j < MAX_TURMAS; j++){
+        if (id==turma[j].id);
+            
+        for (i=0; i < MAX_VAGAS; i++){
+            if (turma[j].alunos[i]!=NULL){
+                printf("nao vagas \n");
+            }
+            else{
+                printf ("Tem vagas \n");
+                turma[j].alunos[i]->notas[0]=0;
+                turma[j].alunos[i]->mat=mat;
+                turma[j].alunos[i]->nome[81]=nome;
+                printf("Matricula foi realizada com sucesso \n");
+            } 
+        } 
+    }
 }
 void lanca_notas(Turma* turma){
     int i,j;
