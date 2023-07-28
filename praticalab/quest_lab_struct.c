@@ -19,8 +19,7 @@ typedef struct turma {
 
 Turma* turmas[MAX_TURMAS];
 
-int print_menu (){
-    int opcao;
+void print_menu (){
     printf("MENU: \n");
     printf("1 : Criar turma \n");
     printf("2 : Matricular aluno \n");
@@ -28,9 +27,7 @@ int print_menu (){
     printf("4 : Lancar notas \n");
     printf("5 : Listar alunos \n");
     printf("6 : Sair \n");
-    printf("DIGITE A OPCAO DESEJADA \n" );
-    scanf ("%d", &opcao);
-return opcao;
+   
 }
 
 //funcao de criar as turmas
@@ -135,38 +132,43 @@ void imprime_alunos(Turma *turma)
 int main(void)
 {
     char id, nome[81];
-    int opcao = 0, mat, n = 0;
-    while (opcao != 6)
-    {
-    opcao = print_menu();
-    switch (opcao)
-    {
-    case 1:
-        printf("Digite o id da turma que deseja criar \n");
-        scanf(" %[^\n]c", &id);
-        Turma *turma = cria_turma(id);
-        break;
-    case 2:
-        printf("Digite o nome do aluno \n");
-        scanf(" %[^\n]s", nome);
-        printf("Digite a matricula \n");
-        scanf("%d", &mat);
-        matricula_aluno(turma, mat, nome);
-        break;
-    case 3:
-        imprime_turmas(turmas, n);
-        break;
-    case 4:
-        lanca_notas(turma);
-        break;
-    case 5:
-        imprime_alunos(turma);
-        break;
-    case 6:
-        printf("PROGRAMA ENCERADO \n\n");
-        break;
-    }
-    }
+    int opcao, mat, n = 0;
+    Turma * turma = (Turma *)malloc(sizeof(Turma));
+        do{
+        print_menu();
+        printf("DIGITE A OPCAO DESEJADA \n" );
+        scanf ("%d", &opcao);
+        switch (opcao){
+            case 1:
+                printf("Digite o id da turma que deseja criar \n");
+                scanf(" %[^\n]c", &id);
+                turma = cria_turma(id);
+                break;
+            case 2:
+                printf("Digite o nome do aluno \n");
+                scanf(" %[^\n]s", nome);
+                printf("Digite a matricula \n");
+                scanf("%d", &mat);
+                matricula_aluno(turma, mat, nome);
+                break;
+            case 3:
+                imprime_turmas(turmas, n);
+                break;
+            case 4:
+                lanca_notas(turma);
+                break;
+            case 5:
+                imprime_alunos(turma);
+                break;
+            case 6:
+                printf("PROGRAMA ENCERADO \n\n");
+                break;
+            default:
+                printf("entrada invalida");
+                break;
+            }
+        }while (opcao != 6);
 
-    return 0;
+   return 0;
 }
+
