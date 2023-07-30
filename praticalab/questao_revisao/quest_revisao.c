@@ -59,7 +59,7 @@ void buscar_fruta_por_nome(Fruta *fruta)
 int main(void)
 {
     int opcao;
-    Fruta *minha_fruta = NULL;
+    Fruta *fruta = NULL;
 
     do
     {
@@ -74,26 +74,26 @@ int main(void)
         switch (opcao)
         {
         case 1:
-            cadastrar_fruta(&minha_fruta);
+            cadastrar_fruta(&fruta);
             break;
         case 2:
-            if (minha_fruta != NULL)
-                listar_fruta(minha_fruta);
+            if (fruta != NULL)
+                listar_fruta(fruta);
             else
                 printf("Nenhuma fruta cadastrada ainda.\n");
             break;
         case 3:
-            if (minha_fruta != NULL)
-                buscar_fruta_por_nome(minha_fruta);
+            if (fruta != NULL)
+                buscar_fruta_por_nome(fruta);
             else
                 printf("Nenhuma fruta cadastrada ainda.\n");
             break;
         case 4:
             // Liberar memória alocada antes de encerrar o programa
-            if (minha_fruta != NULL)
+            if (fruta != NULL)
             {
-                free(minha_fruta);
-                minha_fruta = NULL;
+                free(fruta);
+                fruta = NULL;
             }
             break;
         default:
