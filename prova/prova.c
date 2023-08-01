@@ -74,7 +74,7 @@ int main()
             }
             break;
         case 4:
-            // Exit the loop and end the program
+            // sai do loop e encera o programa
             break;
         default:
             printf("Opção inválida!\n");
@@ -83,7 +83,7 @@ int main()
 
     } while (opcao != 4);
 
-    // Free allocated memory before exiting the program
+    // libera memoria
     free(professor);
 
     return 0;
