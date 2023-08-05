@@ -28,9 +28,9 @@ int main(void)
         exit(1);
     }
 
-    while (fscanf(entrada, "%s %f %f %f", nome, &nota1, &nota2, &nota3) == 4) // Verifica se foram lidos 4 valores
+    while (fscanf(entrada, "%[^\t]%f\t%f\t%f", nome, &nota1, &nota2, &nota3) == 4) // Verifica se foram lidos 4 valores
     {
-        media = (nota1 + nota2 + nota3) / 3.0;
+        media = (nota1 + nota2 + nota3) / 3;
         fprintf(saida, "%s\t%.2f\t", nome, media); // Escreve nome e media no arquivo de saída
 
         if (media >= 7.0)
