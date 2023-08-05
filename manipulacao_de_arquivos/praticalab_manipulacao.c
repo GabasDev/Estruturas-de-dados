@@ -20,8 +20,7 @@ int main(void)
     }
     fputc ('A', arquivo);
     fputs ('\n HELLO WORLD GABAS', arquivo);
-    fprintf (arquivo, "\n algoritmos e estruturas de dados 1: %f \n",
-    5.6);
+    fprintf (arquivo, "\n algoritmos e estruturas de dados 1: %f \n",5.6);
     fclose(arquivo); // fecha arquivo
     return 0;
 }
