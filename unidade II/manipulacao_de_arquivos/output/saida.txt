@@ -1,0 +1,3 @@
+Menor elemento: 1
+Maior elemento: 19
+Média dos elementos: 7.90

@@ -14,14 +14,14 @@ int main(void)
     FILE *saida;
     float nota1, nota2, nota3, media;
 
-    entrada = fopen("entrada_q3.txt", "r"); // Corrigido o nome do arquivo de entrada
+    entrada = fopen("entrada_q3.txt", "r"); // o nome do arquivo de entrada
     if (entrada == NULL)
     {
         printf("Erro ao abrir o arquivo de entrada\n");
         exit(1);
     }
 
-    saida = fopen("saida_q3.txt", "w"); // Corrigido o nome do arquivo de saída
+    saida = fopen("saida_q3.txt", "w"); //o nome do arquivo de saída
     if (saida == NULL)
     {
         printf("Erro ao abrir o arquivo de saida\n");
