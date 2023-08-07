@@ -1,0 +1,25 @@
+FOLHA DE PAGAMENTO  DEPTO A
+FUNCIONAL NOME           DEPTO  SALARIO   
+A1        ANA            A      800.00    
+A2        BEATRIZ        A      800.50    
+A3        BRUNO          A      1000.00   
+
+VALOR TOTAL A: R$ 2600.50
+
+FOLHA DE PAGAMENTO  DEPTO B
+FUNCIONAL NOME           DEPTO  SALARIO   
+B1        CARLA          B      1000.50   
+B2        DANIEL         B      2000.00   
+B3        DAVI           B      5000.00   
+B4        ELEN           B      5500.00   
+
+VALOR TOTAL B: R$ 13500.50
+
+FOLHA DE PAGAMENTO  DEPTO C
+FUNCIONAL NOME           DEPTO  SALARIO   
+C1        FELIPE         C      1000.00   
+C2        GABI           C      5000.00   
+C3        MARTA          C      2400.00   
+
+VALOR TOTAL C: R$ 8400.00
+
