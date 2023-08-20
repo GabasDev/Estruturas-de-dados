@@ -1,0 +1,5 @@
+Alice	9.50
+Bob	7.80
+Carol	6.20
+David	8.90
+Eve	5.40
