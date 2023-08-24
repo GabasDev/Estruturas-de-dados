@@ -7,9 +7,11 @@ Matriz* mat_cria(int i, int j);
 
 void mat_libera(Matriz* mat);
 
-float mat_acessa(Matriz* mat, int i, int j, float v);
+float mat_acessa(Matriz* mat, int i, int j);
 
-void mat_atribui(Matriz* mat);
+void mat_atribui(Matriz* mat, int i, int j, float v);
 
 int mat_colunas(Matriz* mat);
+
+int mat_linhas(Matriz* mat);
 
