@@ -9,7 +9,7 @@ typedef struct pilha
 }Pilha;
 
 Pilha* pilha_cria(void){
-    Pilha* p= (Pilha*) malloc(sizeof(Pilha));
+    Pilha* p= (Pilha*) malloc (sizeof(Pilha));
     p->n = 0;
     return p;
 }
